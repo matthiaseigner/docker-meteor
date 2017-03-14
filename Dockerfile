@@ -1,7 +1,7 @@
 FROM          base/archlinux
 MAINTAINER    Matthias Eigner (https://github.com/matthiaseigner) [me@matthiaseigner.at]
 
-RUN sudo apt-get update &&\
+RUN apt-get update &&\
     apt-get install npm -y &&\
     curl https://install.meteor.com | /bin/sh
 
